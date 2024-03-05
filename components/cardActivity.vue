@@ -21,7 +21,7 @@ const props = defineProps({
         <IconPlay class="sm:ml-52 lg:ml-28" v-if="color === '#56c2e6'" />
         <IconStudy class="sm:ml-52 lg:ml-28" v-if="color === '#ff5e7d'" />
         <IconExcercise class="sm:ml-52 lg:ml-28" v-if="color === '#4bcf83'" />
-        <IconExercise class="sm:ml-52 lg:ml-28" v-if="color === '#4bcf83'" />
+        <!-- <IconExercise class="sm:ml-52 lg:ml-28" v-if="color === '#4bcf83'" /> -->
         <IconSocial class="sm:ml-52 lg:ml-28" v-if="color === '#7434d1'" />
         <IconSelfCare class="sm:ml-52 lg:ml-28" v-if="color === '#f1c75b'" />
       </div>

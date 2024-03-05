@@ -13,7 +13,7 @@ module.exports = {
       screens: {
         sm: { max: "375px" },
         md: { max: "768px" },
-        lg: "1440px",
+        lg: { max: "1440px" },
       },
       colors: {
         // colors: {
