@@ -170,13 +170,14 @@ console.log(showTimeFrame.value);
 
 <template>
   <div class="desktop pt-36">
-    <div
+    <!-- <div
       class="container1 sm:px-5 lg:px-56 grid lg:grid-cols-4 lg:grid-rows-2 gap-4"
-    >
+    > -->
+    <div class="container1 sm:px-5 gap-4">
       <div class="lg:row-span-1 leftZone grid relative">
         <!-- left zone -->
         <div
-          class="bg-[#5746ea] rounded-lg profile lg:flex-col relative z-10 sm:mb-0 lg:pl-8 lg:pt-3 lg:pb-14"
+          class="bg-[#5746ea] rounded-lg profile lg:flex-col relative z-10 sm:mb-0 lg:pl-8 lg:pt-3 lg:pb-10"
         >
           <!-- top zone -->
           <div
@@ -191,7 +192,7 @@ console.log(showTimeFrame.value);
             </div>
             <div class="">
               <p class="sm:text-base lg:text-xs my-2">Report for</p>
-              <h1 class="sm:text-xl lg:text-3xl sm:pb-4">Jeremy Robson</h1>
+              <h1 class="name lg:text-3xl">Jeremy Robson</h1>
             </div>
           </div>
         </div>
@@ -224,7 +225,8 @@ console.log(showTimeFrame.value);
         </div>
       </div>
       <!-- right zone  -->
-      <div class="lg:col-span-3 grid lg:grid-cols-3 gap-5">
+      <!-- <div class="rightZone lg:col-span-3 grid lg:grid-cols-3 gap-5"> -->
+      <div class="rightZone gap-5">
         <CardActivity
           v-for="(item, index) in showTimeFrame"
           :key="index"
@@ -252,14 +254,47 @@ console.log(showTimeFrame.value);
   .topZone {
     display: flex;
     gap: 1em;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .name {
+    font-size: 1.5em;
+  }
+  button {
+    font-size: 3em;
   }
 }
 
 @media screen and (min-width: 768px) {
+  button {
+    font-size: 2em;
+  }
+  .topZone {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile {
+    padding-bottom: 5em;
+  }
   .butZone {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .container1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .rightZone {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column: span 3;
   }
 }
 </style>

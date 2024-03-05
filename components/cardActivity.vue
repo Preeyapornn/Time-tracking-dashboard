@@ -11,19 +11,19 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative sm:py-3">
     <div
       class="rounded-lg p-3 flex flex-col justify-start"
       :style="`z-index: 1; background-color: ${color};`"
     >
       <div>
-        <IconWork class="sm:ml-52 lg:ml-28" v-if="color === '#ff8b64'" />
-        <IconPlay class="sm:ml-52 lg:ml-28" v-if="color === '#56c2e6'" />
-        <IconStudy class="sm:ml-52 lg:ml-28" v-if="color === '#ff5e7d'" />
-        <IconExcercise class="sm:ml-52 lg:ml-28" v-if="color === '#4bcf83'" />
-        <!-- <IconExercise class="sm:ml-52 lg:ml-28" v-if="color === '#4bcf83'" /> -->
-        <IconSocial class="sm:ml-52 lg:ml-28" v-if="color === '#7434d1'" />
-        <IconSelfCare class="sm:ml-52 lg:ml-28" v-if="color === '#f1c75b'" />
+        <IconWork class="lg:ml-40" v-if="color === '#ff8b64'" />
+        <IconPlay class="lg:ml-40" v-if="color === '#56c2e6'" />
+        <IconStudy class="lg:ml-40" v-if="color === '#ff5e7d'" />
+        <IconExcercise class="lg:ml-40" v-if="color === '#4bcf83'" />
+
+        <IconSocial class="lg:ml-40" v-if="color === '#7434d1'" />
+        <IconSelfCare class="lg:ml-40" v-if="color === '#f1c75b'" />
       </div>
     </div>
 
@@ -36,7 +36,7 @@ const props = defineProps({
           <p class="text-white">{{ title }}</p>
           <img
             src="../assets/images/icon-ellipsis.svg"
-            class="w-auto sm:ml-24 lg:ml-14 mt-1"
+            class="w-auto sm:ml-[11em] md:ml-5 lg:ml-14 mt-1"
             alt=""
           />
         </div>
