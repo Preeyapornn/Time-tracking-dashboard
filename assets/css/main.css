@@ -1,0 +1,24 @@
+@import url(https://fonts.google.com/specimen/Rubik);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  background-color: #071b26;
+}
+:root {
+  --background-color: #0d1323;
+  --background-light: #1d204b;
+  --color-blue: #5746ea;
+
+  --color-orange: #ff8b64;
+  --color-light-blue: #56c2e6;
+  --color-red: #ff5e7d;
+  --color-green: #4bcf83;
+  --color-purple: #7434d1;
+  --color-yellow: #f1c75b;
+}
